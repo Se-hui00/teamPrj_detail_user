@@ -27,9 +27,9 @@
   grid-template-columns: 1fr minmax(700px, 3fr) 1fr;
   grid-template-rows: 40px 100px 50px 120px 300px auto minmax(70px, auto) 100px 400px 150px;
   grid-template-areas:
+    'up-l          up                   up-r'
     'hd-l          hd                   hd-r'
     'gnb-l         gnb                 gnb-r'
-    'nav-l         nav                 nav-r'
     'topTitle-l    topTitle-c     topTitle-r'
     '.             mnFace                  .'
     '.             menuBtn                 .'
@@ -40,6 +40,43 @@
 }
 
 /* 레이아웃 요소 배치 */
+.up-l {
+  grid-area: up-l;
+}
+.up {
+  grid-area: up;
+}
+.up-r {
+  grid-area: up-r;
+}
+.hd-l {
+  grid-area: hd-l;
+}
+.hd {
+  grid-area: hd;
+}
+.hd-r {
+  grid-area: hd-r;
+}
+.gnb-l {
+  grid-area: gnb-l;
+}
+.gnb {
+  grid-area: gnb;
+}
+.gnb-r {
+  grid-area: gnb-r;
+}
+/* .nav-l {
+  grid-area: nav-l;
+}
+.nav {
+  grid-area: nav;
+}
+.nav-r {
+  grid-area: nav-r;
+} */
+
 .topTitle-l {
   grid-area: topTitle-l;
 }
@@ -68,4 +105,14 @@
 
 .campImg {
   grid-area: campImg;
+}
+
+.ft-l {
+  grid-area: ft-l;
+}
+.ft {
+  grid-area: ft;
+}
+.ft-r {
+  grid-area: ft-r;
 }
