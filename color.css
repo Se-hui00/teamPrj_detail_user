@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+:root {
+  /*테마 색상*/
+  --theme-color: rgb(254, 94, 75);
+  --theme-color-thin: rgb(255, 229, 220);
+  --theme-color-thic: rgb(152, 88, 79);
+
+  /*배경 색상*/
+  --bg-header-color: white;
+
+  --bg-color-lightgray: rgba(180, 180, 180, 0.9);
+  --bg-color-Invisiblered: rgba(230, 116, 116, 0.7);
+  --bg-color-darkgray-transparent: rgba(210, 210, 210, 0.3);
+
+  /*폰트 색상*/
+  --main-font-color: white;
+
+  /*서치박스 색상*/
+  --search-box-color: rgba(56, 68, 116, 0.7);
+
+  /*그외*/
+  --button-color-clicked: rgb(100, 100, 100);
+  --mn__tag-label: rgb(230, 230, 230, 0.9);
+}

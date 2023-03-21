@@ -1,0 +1,71 @@
+@charset "UTF-8";
+@import 'color.css';
+@import 'font.css';
+
+/* hd */
+/* gnb*/
+/* nav */
+/*1.topTitle*/
+/*2.mnFace*/
+/*3.menuBtn*/
+/*4.intro*/
+/*5.inform*/
+/*6.campImg*/
+/* ft */
+/**/
+
+/* 전체 레이아웃*/
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr minmax(700px, 3fr) 1fr;
+  grid-template-rows: 500px minmax(400px, auto) 200px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr minmax(700px, 3fr) 1fr;
+  grid-template-rows: 40px 100px 50px 120px 300px auto minmax(70px, auto) 100px 400px 150px;
+  grid-template-areas:
+    'hd-l          hd                   hd-r'
+    'gnb-l         gnb                 gnb-r'
+    'nav-l         nav                 nav-r'
+    'topTitle-l    topTitle-c     topTitle-r'
+    '.             mnFace                  .'
+    '.             menuBtn                 .'
+    '.             intro                   .'
+    '.             inform                  .'
+    '.             campImg                 .'
+    'ft-l          ft                   ft-r';
+}
+
+/* 레이아웃 요소 배치 */
+.topTitle-l {
+  grid-area: topTitle-l;
+}
+.topTitle-c {
+  grid-area: topTitle-c;
+}
+.topTitle-r {
+  grid-area: topTitle-r;
+}
+
+.mnFace {
+  grid-area: mnFace;
+}
+
+.menuBtn {
+  grid-area: menuBtn;
+}
+
+.intro {
+  grid-area: intro;
+}
+
+.inform {
+  grid-area: inform;
+}
+
+.campImg {
+  grid-area: campImg;
+}
