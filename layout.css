@@ -16,21 +16,21 @@
 
 /* 전체 레이아웃*/
 
-.wrapper {
+/* .wrapper {
   display: grid;
   grid-template-columns: 1fr minmax(700px, 3fr) 1fr;
   grid-template-rows: 500px minmax(400px, auto) 200px;
-}
+} */
 
 .wrapper {
   display: grid;
   grid-template-columns: 1fr minmax(700px, 3fr) 1fr;
-  grid-template-rows: 40px 100px 50px 120px 300px auto minmax(70px, auto) 100px 400px 150px;
+  grid-template-rows: 40px 100px 50px 120px 350px auto minmax(70px, auto) auto auto 150px;
   grid-template-areas:
     'up-l          up                   up-r'
     'hd-l          hd                   hd-r'
     'gnb-l         gnb                 gnb-r'
-    'topTitle-l    topTitle-c     topTitle-r'
+    '.             topTitle                .'
     '.             mnFace                  .'
     '.             menuBtn                 .'
     '.             intro                   .'
@@ -67,42 +67,22 @@
 .gnb-r {
   grid-area: gnb-r;
 }
-/* .nav-l {
-  grid-area: nav-l;
-}
-.nav {
-  grid-area: nav;
-}
-.nav-r {
-  grid-area: nav-r;
-} */
 
-.topTitle-l {
-  grid-area: topTitle-l;
+.topTitle {
+  grid-area: topTitle;
 }
-.topTitle-c {
-  grid-area: topTitle-c;
-}
-.topTitle-r {
-  grid-area: topTitle-r;
-}
-
 .mnFace {
   grid-area: mnFace;
 }
-
 .menuBtn {
   grid-area: menuBtn;
 }
-
 .intro {
   grid-area: intro;
 }
-
 .inform {
   grid-area: inform;
 }
-
 .campImg {
   grid-area: campImg;
 }
