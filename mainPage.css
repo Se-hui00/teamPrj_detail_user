@@ -227,15 +227,12 @@
   margin: 2px;
 }
 
-.menuBtn > header > label:hover {
-  /* background-color: #fff; */
-}
-
-@media (max-width: 800px) {
+/* 반응형 */
+/* @media (max-width: 800px) {
   .menuBtn > header > label {
     width: 45%;
   }
-}
+} */
 
 /* 3.1 */
 /* 3.1-1.intro */
@@ -246,7 +243,7 @@
 /* 3.1-2.inform */
 .inform {
   display: grid;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 1fr;
 }
 .inform .img {
   display: flex;
@@ -255,8 +252,6 @@
   align-items: center;
   align-content: center;
   gap: 20px;
-  /* padding: 20px 0 20px 0; */
-  /* height: 100%; */
 }
 .inform .img .item {
   position: relative;
@@ -281,7 +276,7 @@
 /* 3.1-3. campImg */
 .campImg {
   display: grid;
-  grid-template-rows: 1fr 10fr;
+  grid-template-rows: 1fr 3fr;
 }
 .campImg .img {
   display: flex;
@@ -351,8 +346,9 @@
 }
 
 /* 3.2-2.caution-guide */
-.caution-guide .caution-guide__content {
+.caution-guide li {
   font-size: var(--font-size-small);
+  margin: 5px 0 5px 0;
 }
 
 /* 3.2-3.safety-guide */
@@ -399,11 +395,7 @@
 .operation-guide h3,
 .caution-guide h3,
 .safety-guide h3 {
-  margin: 10px;
-}
-.intro h3,
-.operation-guide h3 {
-  margin-top: 50px;
+  margin: 50px 10px 10px 10px;
 }
 /* 내용여백 */
 .intro p,
