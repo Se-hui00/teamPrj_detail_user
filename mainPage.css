@@ -154,8 +154,8 @@
 .mnFace-r td {
   padding: 8px;
   border-collapse: collapse;
-  border-top: 1px solid #444444;
-  border-bottom: 1px solid #444444;
+  border-top: 1px solid var(--search-box-color);
+  border-bottom: 1px solid var(--search-box-color);
   /* padding: 10px; */
 }
 .mnFace-r td:first-child {
@@ -199,8 +199,7 @@
 .menuBtn input:nth-of-type(1):checked ~ header > label[for='tab1'],
 .menuBtn input:nth-of-type(2):checked ~ header > label[for='tab2'] {
   background: var(--theme-color);
-  /* border-color: var(--theme-color); */
-  color: #fff;
+  color: var(--main-font-color);
 }
 
 .menuBtn {
@@ -218,8 +217,6 @@
   width: 100px;
   height: 40px;
   line-height: 40px;
-  font-family: 'NanumBold';
-  font-weight: 700;
   text-decoration: none;
   cursor: pointer;
   background-color: #ededed;
@@ -228,7 +225,7 @@
 }
 
 .menuBtn > header > label:hover {
-  background-color: #fff;
+  /* background-color: #fff; */
 }
 
 @media (max-width: 800px) {
@@ -336,4 +333,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+/* 여백 */
+.intro h3,
+.intro p,
+.inform h3,
+.campImg h3 {
+  margin: 10px;
 }
