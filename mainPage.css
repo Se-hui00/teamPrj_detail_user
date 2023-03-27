@@ -346,9 +346,10 @@
 }
 
 /* 3.2-2.caution-guide */
-.caution-guide li {
+.caution-guide p {
   font-size: var(--font-size-small);
-  margin: 5px 0 5px 0;
+  text-align: justify;
+  /* margin: 5px 0 5px 0; */
 }
 
 /* 3.2-3.safety-guide */
@@ -400,7 +401,7 @@
 /* 내용여백 */
 .intro p,
 .operation-guide .operation-guide__content,
-.caution-guide ul,
+.caution-guide p,
 .safety-guide img {
   margin: 20px;
 }
