@@ -25,7 +25,6 @@
   display: grid;
   grid-template-columns: 1fr minmax(700px, 3fr) 1fr;
   grid-template-rows: 40px 100px 50px 120px 350px auto 150px;
-  /* grid-template-rows: 40px 100px 50px 120px 350px auto minmax(70px, auto) auto auto 150px; */
   grid-template-areas:
     'up-l          up                   up-r'
     'hd-l          hd                   hd-r'
